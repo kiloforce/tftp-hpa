@@ -118,4 +118,9 @@ extern int segsize;
 int pick_port_bind(int sockfd, union sock_addr *myaddr,
                    unsigned int from, unsigned int to);
 
+#ifndef _TOP_LEVEL_
+#define _TOP_LEVEL_
+static sigjmp_buf toplevel;
+#endif
+
 #endif

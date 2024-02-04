@@ -95,7 +95,6 @@ char line[LBUFLEN];
 int margc;
 char *margv[20];
 const char *prompt = "tftp> ";
-sigjmp_buf toplevel;
 void intr(int);
 struct servent *sp;
 int portrange = 0;
